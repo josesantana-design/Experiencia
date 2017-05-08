@@ -1,0 +1,190 @@
+
+@charset "utf-8"
+
+@import "sass/utilities/_all"
+@import "sass/base/_all"
+@import "sass/elements/_all"
+@import "sass/components/_all"
+@import "sass/grid/_all"
+@import "sass/layout/_all"
+
+
+
+.top
+	display: flex
+	height: 2.5rem
+	position: relative
+	text-align: center
+	z-index: 10
+	background-color: $primary
+
+.top-left
+	justify-content: flex-start
+	white-space: nowrap
+	align-items: stretch
+	display: flex
+	flex-grow: 0
+	flex-shrink: 0
+	max-width: 100%
+	overflow: auto
+	color: white
+	.select
+		select
+			background-color: transparent
+			color: white
+			border-radius: 0
+			border: 1px solid white
+		option
+			color: #333
+
+.top-center
+	align-items: stretch
+	display: flex
+	flex-grow: 1
+	flex-shrink: 0
+	justify-content: center
+	margin-left: auto
+	margin-right: auto
+	.control
+		.input
+			border-radius: 40px
+			border: 0
+			width: 400px
+			height: 2rem
+			padding-bottom: 7px
+
+		.icon
+			height: 2rem
+			.fa
+				font-size: 14px
+
+
+
+.top-right
+	align-items: stretch
+	display: flex
+	flex-grow: 0
+	flex-shrink: 0
+	max-width: 100%
+	overflow: auto
+	a
+	    border: 2px solid white
+	    color: white
+	    width: 25px
+	    height: 25px
+	    border-radius: 40px
+	    padding-top: 5px
+	    margin-left: 10px
+	    &:hover
+	    	background-color: white
+	    	color: $primary
+	    i
+	    	font-size: 12px
+
+.top-item
+	align-items: center
+	display: flex
+	flex-grow: 0
+	flex-shrink: 0
+	font-size: 1rem
+	justify-content: center
+	line-height: 1.5
+	padding: 0.5rem 0.75rem
+
+.nav
+	a
+		&:hover
+			color: $primary
+		i.fa
+			margin-right: 10px
+			font-size: 14px
+			color: $primary
+	.nav-item
+		.logo
+			width: 180px
+			height: 100%
+		img
+			max-height: 100%
+
+
+.hero
+	background-image: url(/img/banner.jpg)
+	background-size: cover
+	background-position: center
+	height: 100vh
+	.title
+		font-size: 3rem
+		text-align: center
+		color: white
+		margin-top: 200px
+		font-weight: 400
+		span
+			color: $danger
+			font-weight: 400
+
+	.subtitle
+	    text-align: center
+	    color: white
+
+	.travel
+		background-color: rgba(0, 0, 0, 0.42)
+		width: 100%
+		padding: 2em
+		margin-top: 50px
+		.tabs
+			li
+				margin-right: 5px
+				&:first-child a
+					border-radius: 0
+					border: 2px solid $primary
+				&:last-child a
+					border-radius: 0
+				a
+					color: white
+					border: 2px solid white
+					&:hover
+						background-color: $primary
+						border: 2px solid $primary
+
+		.form
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			.field
+
+			.label
+				color: white
+				font-weight: 300
+
+			.input
+				border: 2px solid white
+				background: transparent
+				border-radius: 0
+				color: white
+			.icon
+				top: 32px
+				.fa
+					font-size: 18px
+
+			.button
+				width: 160px
+				border-radius: 0
+				margin-top: 32px
+
+			.select
+				width: 100%
+				select
+					border-radius: 0
+					width: 100%
+
+	#input_from,
+	#input_to
+		cursor: pointer
+
+
+.gallery
+	.item
+		border: 1px solid gray
+		.content
+			.image
+				
