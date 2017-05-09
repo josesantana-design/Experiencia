@@ -30,3 +30,8 @@ to_picker.on('set', function(event) {
     from_picker.set('max', false)
   }
 })
+
+
+$('.pais').click(function(){
+  $('.items').toggleClass('open');
+})

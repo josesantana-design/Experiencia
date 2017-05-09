@@ -9,49 +9,38 @@
 </head>
 <body>
 
+	<!-- Top -->
 	<header>
+
 		<div class="top">
 			<div class="top-left">
 				<div class="top-item">
-					<div class="field">
-					  <p class="control">
-					    <span class="select">
-					      <select>
-					        <option>Venezuela</option>
-					        <option>EEUU</option>
-					      </select>
-					    </span>
-					  </p>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="top-center">
-				<div class="top-item">
-					<div class="field">
-					  <p class="control has-icons-right">
-					    <input class="input" type="text" placeholder="Busqueda">
-					    <span class="icon is-right">
-					      <i class="fa fa-search"></i>
-					    </span>
-					  </p>
-					</div>
+					<a href="#" class="phone"><i class="fa fa-phone"></i>(+514) 2412552658</a>
+					<a href="#" class="email"><i class="fa fa-envelope-o"></i>supportplus@email.com</a>
 				</div>
 			</div>
+
 
 			<div class="top-right">
 				<div class="top-item">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a class="login">
+						Login
+					</a>
+					<a class="registro">
+						Registro
+					</a>
+				</div>
+				<div class="top-item">
+					<a href="#" class="redes"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="redes"><i class="fa fa-twitter"></i></a>
+					<a href="#" class="redes"><i class="fa fa-instagram"></i></a>
 				</div>
 			</div>
 		</div>
 
 		<nav class="nav has-shadow">
 			<div class="nav-left">
-				<a class="nav-item">
+				<a class="nav-logo">
 				  <img class="logo" src="img/logo.png">
 				</a>
 
@@ -64,6 +53,36 @@
 				<a class="nav-item"><i class="fa fa-phone"></i>Contactanos</a>
 			</div>
 
+			<div class="nav-right">
+				<a class="nav-item">
+					<div class="field">
+							<span class="select">
+								<select>
+									<option>EUR</option>
+									<option>USD</option>
+									<option>BRL</option>
+									<option>BFS</option>
+								</select>
+							</span>
+					</div>
+				</a>
+
+				<div href="#" class="nav-item paises">
+
+					<a class="pais">
+						<img src="img/ven.png">
+					</a>
+
+					<ul class="items">
+						<li><a href=""><img src="img/eeuu.jpg">EEUU</a></li>
+						<li><a href=""><img src="img/panama.png">Panama</a></li>
+						<li><a href=""><img src="img/brasil.png">Brasil</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+
 			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
 			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
 			<span class="nav-toggle">
@@ -73,12 +92,12 @@
 			</span>
 
 		</nav>
-	</header>
+	</header>		<!--End Top -->
 
-
-	<section class="hero">
-	  <div class="hero-body">
+	<!-- Banner -->
+	<section class="banner">
 	    <div class="container">
+
 	      <h1 class="title"><span>Consectetur</span> adipisicing elit.</h1>
 	      <h2 class="subtitle">Optio dolor natus dignissimos, suscipit hic.</h2>
 
@@ -122,7 +141,7 @@
 								<label class="label">Destino</label>
 						    <input class="input" type="text">
 								<span class="icon is-small is-left">
-		      				<i class="fa fa-chevron-circle-left"></i>
+		      				<i class="fa fa-map-marker"></i>
 		    				</span>
 						  </p>
 						</div>
@@ -161,37 +180,137 @@
 						</div>
 					</div>
 	    	</div>
-	    </div>
-	  </div>
-	</section>
 
+	    </div>
+	</section> <!--End Banner -->
+
+
+	<!--Gallery -->
 	<section class="gallery">
 		<div class="container">
-			<h1 class="title">Lorem ipsum dolor sit amet.</h3>
-			<h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+			<h1 class="gallery-title">Lorem ipsum dolor sit amet.</h3>
+			<h2 class="gallery-subtitle">Populares</h3>
 			<div class="columns">
-			  <div class="column">
-			    <img src="img/thumb.jpg" alt="">
-			  </div>
-			  <div class="column">
-			    <img src="img/thumb.jpg" alt="">
-			  </div>
-			  <div class="column">
-			    <img src="img/thumb.jpg" alt="">
-			  </div>
-			  <div class="column">
-			    <div class="item">
-			    	<div class="content">
-			    		<div class="image">
-			    			<a href=""><img src="img/thumb.jpg" alt=""></a>
-								<div class="group-icon">
-									<i></i>
-								</div>
-			    		</div>
+			  <div class="column is-4">
+					<div class="card">
+					  <div class="card-image">
+					    <figure class="image">
+					      <img src="img/thumb.jpg" alt="Image">
+								<h2 class="sale">Destacado</h2>
+								<span class="group-icon">
+									<i class="fa fa-sun-o"></i>
+									<i class="fa fa-umbrella"></i>
+								</span>
+					    </figure>
+					  </div>
+					  <div class="card-content">
+					    <div class="media">
+					      <div class="media-content">
+					        <p class="title">Venezuela</p>
+					        <p class="subtitle">@plusultra</p>
+					      </div>
+					    </div>
 
-			    	</div>
-			    </div>
+					    <div class="content">
+					      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					      Phasellus nec iaculis mauris. <a>@plusultra</a>.
+					      <a>#playa</a> <a>#venezuela</a>
+					      <br>
+					      <small>11:09 PM - 1 Jan 2016</small>
+					    </div>
+
+					  </div>
+
+						<div class="read-more">
+								<span class="comment">
+	 							 <i class="fa fa-comment"></i>
+								 5 Comentarios
+							 </span>
+							<a href="#">Leer mas</a>
+						</div>
+
+					</div>
 			  </div>
+
+				<div class="column is-4">
+			 	 <div class="card">
+			 		 <div class="card-image">
+			 			 <figure class="image">
+			 				 <img src="img/thumb_2.jpg" alt="Image">
+			 				 <span class="group-icon">
+			 					 <i class="fa fa-sun-o"></i>
+			 					 <i class="fa fa-umbrella"></i>
+			 				 </span>
+			 			 </figure>
+			 		 </div>
+			 		 <div class="card-content">
+			 			 <div class="media">
+			 				 <div class="media-content">
+			 					 <p class="title">Venezuela</p>
+			 					 <p class="subtitle">@plusultra</p>
+			 				 </div>
+			 			 </div>
+
+			 			 <div class="content">
+			 				 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			 				 Phasellus nec iaculis mauris. <a>@plusultra</a>.
+			 				 <a>#playa</a> <a>#venezuela</a>
+			 				 <br>
+			 				 <small>11:09 PM - 1 Jan 2016</small>
+			 			 </div>
+
+			 		 </div>
+
+			 		 <div class="read-more">
+						 <span class="comment">
+							<i class="fa fa-comment"></i>
+							100 Comentarios
+						</span>
+			 			 <a href="#">Leer mas</a>
+			 		 </div>
+
+			 	 </div>
+			  </div>
+
+				<div class="column is-4">
+				 <div class="card">
+					 <div class="card-image">
+						 <figure class="image">
+							 <img src="img/thumb_3.jpg" alt="Image">
+							 <span class="group-icon">
+								 <i class="fa fa-sun-o"></i>
+								 <i class="fa fa-umbrella"></i>
+							 </span>
+						 </figure>
+					 </div>
+					 <div class="card-content">
+						 <div class="media">
+							 <div class="media-content">
+								 <p class="title">China</p>
+								 <p class="subtitle">@plusultra</p>
+							 </div>
+						 </div>
+
+						 <div class="content">
+							 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							 Phasellus nec iaculis mauris. <a>@plusultra</a>.
+							 <a>#lago</a> <a>#china</a>
+							 <br>
+							 <small>12:09 AM - 1 Jan 2016</small>
+						 </div>
+
+					 </div>
+
+					 <div class="read-more">
+						 <span class="comment">
+							<i class="fa fa-comment"></i>
+							20 Comentarios
+						</span>
+						 <a href="#">Leer mas</a>
+					 </div>
+
+				 </div>
+			 </div>
 			</div>
 		</div>
 	</section>
@@ -203,6 +322,9 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.date.js"></script>
 
+<script type="text/javascript" src="js/owl.carousel.min.js">
+
+</script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@
 
 .top
 	display: flex
+	justify-content: space-between
 	height: 2.5rem
 	position: relative
 	text-align: center
@@ -19,7 +20,6 @@
 	background-color: $primary
 
 .top-left
-	justify-content: flex-start
 	white-space: nowrap
 	align-items: stretch
 	display: flex
@@ -28,21 +28,29 @@
 	max-width: 100%
 	overflow: auto
 	color: white
-	.select
-		select
-			background-color: transparent
-			color: white
-			border-radius: 0
-			border: 1px solid white
-		option
-			color: #333
+	.phone
+		color: white
+		font-size: 14px
+		display: flex
+		align-items: center
+		margin-right: 20px
+		.fa
+			margin-right: 10px
+			font-size: 14px
+	.email
+		color: white
+		font-size: 14px
+		display: flex
+		align-items: center
+		.fa
+			margin-right: 10px
+			font-size: 14px
 
 .top-center
 	align-items: stretch
 	display: flex
 	flex-grow: 1
 	flex-shrink: 0
-	justify-content: center
 	margin-left: auto
 	margin-right: auto
 	.control
@@ -67,7 +75,18 @@
 	flex-shrink: 0
 	max-width: 100%
 	overflow: auto
-	a
+	.login
+  	color: white
+  	width: 70px
+  	display: flex
+  	justify-content: space-between
+	.registro
+		color: white
+		width: 70px
+		display: flex
+		font-weight: 600
+		justify-content: space-between
+	.redes
 	    border: 2px solid white
 	    color: white
 	    width: 25px
@@ -92,6 +111,57 @@
 	padding: 0.5rem 0.75rem
 
 .nav
+	.nav-left
+		flex-basis: 80%
+	.nav-logo
+		display: flex
+		align-items: center
+		display: flex
+		flex-grow: 0
+		flex-shrink: 0
+		font-size: 1rem
+		justify-content: center
+		line-height: 1.5
+		padding: 0.5rem 0.75rem
+		.logo
+			width: 180px
+			height: 100%
+		img
+			max-height: 100%
+
+	.nav-right
+		flex-basis: 20%
+		overflow: inherit
+		.select
+			select
+				border: 0
+				color: #7a7a7a
+
+		.paises
+			position: relative
+
+		.items
+			position: absolute
+			bottom: -105px
+			right: 0
+			width: 200px
+			background-color: white
+			display: none
+			box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2)
+
+			li
+				&:last-child
+					border-bottom: 2px solid $primary
+				a
+				display: flex
+				justify-content: space-between
+				border-bottom: 1px solid #d1d1d1
+				padding: 5px
+				align-items: center
+				img
+					margin-right: 10px
+					height: 16px
+					width: 25px
 	a
 		&:hover
 			color: $primary
@@ -99,24 +169,21 @@
 			margin-right: 10px
 			font-size: 14px
 			color: $primary
-	.nav-item
-		.logo
-			width: 180px
-			height: 100%
-		img
-			max-height: 100%
 
+.open
+	display: block !important
 
-.hero
+.banner
 	background-image: url(/img/banner.jpg)
-	background-size: cover
 	background-position: center
 	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
 	.title
 		font-size: 3rem
 		text-align: center
 		color: white
-		margin-top: 200px
 		font-weight: 400
 		span
 			color: $danger
@@ -131,6 +198,7 @@
 		width: 100%
 		padding: 2em
 		margin-top: 50px
+
 		.tabs
 			li
 				margin-right: 5px
@@ -161,6 +229,9 @@
 				background: transparent
 				border-radius: 0
 				color: white
+				&:focus ~
+					.icon
+						color: $primary
 			.icon
 				top: 32px
 				.fa
@@ -183,8 +254,79 @@
 
 
 .gallery
-	.item
-		border: 1px solid gray
-		.content
+	padding: 50px
+	.gallery-title
+		text-align: center
+		font-size: 22px
+		color: $primary
+	.gallery-subtitle
+		font-size: 36px
+		font-weight: 600
+		text-align: center
+		margin-bottom: 50px
+		text-transform: uppercase
+	.card
+		.title
+			font-weight: 400
+		.card-image
 			.image
-				
+				position: relative
+				height: 250px
+				img
+					height: 100%
+				.sale
+					background-color: $danger
+					position: absolute
+					top: 10px
+					left: 0
+					border-radius: 0 0 10px
+					text-align: center
+					color: white
+					padding: 5px
+					box-shadow: -2px 2px 5px rgba(0,0,0,0.3)
+				.group-icon
+					background-color: rgba(0, 0, 0, 0.4)
+					position: absolute
+					bottom: 0
+					right: 0
+					width: 70px
+					display: flex
+					justify-content: space-between
+					color: white
+					padding: 5px
+					.fa
+						&:hover
+							color: #EDDD10
+		.read-more
+			width: 100%
+			display: flex
+			justify-content: space-between
+			.comment
+				display: flex
+				align-items: center
+				color: #b3b2b2
+				padding: 0 20px
+				.fa
+					margin-right: 10px
+			a
+				height: 40px
+				display: block
+				background-color: #00d1b2
+				width: 150px
+				color: white
+				padding: 8px 19px
+				text-transform: uppercase
+				text-align: center
+				position: relative
+				&:hover
+					background-color: mix($primary, white, 90%)
+				&:after
+					position: absolute
+					top: 0
+					left: 0
+					content: ""
+					width: 10px
+					height: 10px
+					border-top: 20px solid transparent
+					border-left: 20px solid white
+					border-bottom: 20px solid transparent
