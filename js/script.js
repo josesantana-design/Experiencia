@@ -35,3 +35,5 @@ to_picker.on('set', function(event) {
 $('.pais').click(function(){
   $('.items').toggleClass('open');
 })
+
+AOS.init();

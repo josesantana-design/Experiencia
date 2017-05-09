@@ -75,17 +75,18 @@
 	flex-shrink: 0
 	max-width: 100%
 	overflow: auto
-	.login
-  	color: white
-  	width: 70px
-  	display: flex
-  	justify-content: space-between
 	.registro
 		color: white
 		width: 70px
-		display: flex
-		font-weight: 600
 		justify-content: space-between
+
+	.login
+		color: white
+		width: 70px
+		justify-content: space-between
+		border: 2px solid
+		border-radius: 3px
+		margin-left: 10px
 	.redes
 	    border: 2px solid white
 	    color: white
@@ -111,7 +112,7 @@
 	padding: 0.5rem 0.75rem
 
 .nav
-
+	border-bottom: 1px solid $primary
 	.nav-left
 		flex-basis: 80%
 	.nav-logo
@@ -187,7 +188,7 @@
 		font-size: 3rem
 		text-align: center
 		color: white
-		font-weight: 400
+		font-weight: 700
 		span
 			color: $danger
 			font-weight: 400
@@ -260,7 +261,7 @@
 	padding: 100px 0
 	&-title
 		font-size: 36px
-		font-weight: 600
+		font-weight: 700
 		text-align: center
 		text-transform: uppercase
 		color: #333
@@ -287,8 +288,11 @@
 					transform: rotate3d(0,1,0,180deg)
 		h3
 			font-size: 22px
-			font-weight: 600
+			font-weight: 700
 			margin-bottom: 10px
+
+		p
+			color: grey
 
 .packages
 	.grid
@@ -318,6 +322,9 @@
 				h4
 					color: #ff3860
 					margin-bottom: 10px
+
+				p
+					color: grey
 
 				.button
 					border-radius: 0
@@ -405,13 +412,15 @@
 
 		.hotel-detail
 			position: absolute
-			top: 40%
+			top: 35%
+			left: 30%
 			border: 2px solid white
 			z-index: 3
 			width: 300px
 			padding: 10px
 			transform: scale(0)
 			color: white
+			text-align: center
 			h3
 				font-size: 24px
 				margin-bottom: 10px
@@ -423,11 +432,63 @@
 				border-radius: 0
 				margin-top: 10px
 
+.ofertas
+	padding: 100px 0
+	&-title
+		font-size: 36px
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+		color: #333
+	&-subtitle
+		text-align: center
+		font-size: 22px
+		color: $grey
+		margin-bottom: 50px
+	&-image
+		height: 250px
+		position: relative
+		overflow: hidden
+		img
+			height: 100%
+
+	&-description
+    position: absolute
+    top: 40%
+    left: 30px
+    color: white
+    display: flex
+    justify-content: space-between
+    width: 210px
+    padding: 20px
+    background-color: rgba(255, 56, 96, 0.76)
+
+	&-sale
+		background-color: rgba(0, 209, 178, 0.58)
+		position: absolute
+		top: 10px
+		right: -40px
+		padding: 10px
+		width: 138px
+		font-size: 13px
+		color: white
+		transform: rotate(45deg)
+		text-align: center
+
+
+	.button
+		margin: auto
+		display: block
+		width: 130px
+		margin-top: 30px
+		font-weight: 600
+		border-radius: 0
+
 .gallery
 	padding: 100px 0
 	&-title
 		font-size: 36px
-		font-weight: 600
+		font-weight: 700
 		text-align: center
 		text-transform: uppercase
 		color: #333
@@ -468,10 +529,16 @@
 					.fa
 						&:hover
 							color: #EDDD10
+
+		.card-content
+			.content
+					color: grey
+
 		.read-more
 			width: 100%
 			display: flex
 			justify-content: space-between
+			border-top: 1px solid #d1d1d1
 			.comment
 				display: flex
 				align-items: center
