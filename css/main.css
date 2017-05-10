@@ -4386,6 +4386,8 @@ label.panel-block {
     height: 100%; }
   .nav .nav-logo img {
     max-height: 100%; }
+  .nav .nav-logo .nav-item {
+    font-weight: 500; }
 
 .nav .nav-right {
   flex-basis: 20%;
@@ -4494,18 +4496,172 @@ label.panel-block {
   .banner #input_to {
     cursor: pointer; }
 
-.gallery {
-  padding: 50px; }
-  .gallery .gallery-title {
-    text-align: center;
-    font-size: 22px;
-    color: #00d1b2; }
-  .gallery .gallery-subtitle {
+.work {
+  padding: 100px 0; }
+  .work-title {
     font-size: 36px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 50px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #333; }
+  .work-subtitle {
+    text-align: center;
+    font-size: 22px;
+    color: #7a7a7a;
+    margin-bottom: 50px; }
+  .work .item {
+    text-align: center; }
+    .work .item .icon {
+      color: white;
+      padding: 40px;
+      border-radius: 50%;
+      background-color: #ff3860;
+      margin-bottom: 20px;
+      position: relative; }
+      .work .item .icon i {
+        font-size: 28px;
+        transition: all 1s; }
+        .work .item .icon i:hover {
+          color: white;
+          transform: rotate3d(0, 1, 0, 180deg); }
+    .work .item h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px; }
+
+.packages .grid {
+  display: flex;
+  height: 600px;
+  padding: 0px; }
+  .packages .grid-column {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .packages .grid-column-inner {
+      width: 50%;
+      height: 50%; }
+    .packages .grid-column .description {
+      text-align: center;
+      padding: 20px;
+      height: 100%;
+      position: relative;
+      border-top: 1px solid #d4d4d4;
+      border-bottom: 1px solid #d4d4d4; }
+      .packages .grid-column .description h3 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px; }
+      .packages .grid-column .description h4 {
+        color: #ff3860;
+        margin-bottom: 10px; }
+      .packages .grid-column .description .button {
+        border-radius: 0;
+        margin-top: 10px; }
+    .packages .grid-column .tooltip-right::after {
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid #fff;
+      border-top: 15px solid transparent;
+      content: "";
+      height: 0;
+      position: absolute;
+      right: -13px;
+      top: 43%;
+      width: 0;
+      z-index: 2; }
+    .packages .grid-column .tooltip-left::after {
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid #fff;
+      border-top: 15px solid transparent;
+      content: "";
+      height: 0;
+      position: absolute;
+      left: -13px;
+      top: 43%;
+      width: 0;
+      z-index: 2;
+      transform: rotate(180deg); }
+    .packages .grid-column .thumb-inner {
+      height: 100%; }
+      .packages .grid-column .thumb-inner .image {
+        height: 100%;
+        position: relative; }
+        .packages .grid-column .thumb-inner .image .detail {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 209, 178, 0.41);
+          transform: scale(0);
+          transition: all .2s; }
+          .packages .grid-column .thumb-inner .image .detail a {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white; }
+            .packages .grid-column .thumb-inner .image .detail a i {
+              font-size: 24px; }
+        .packages .grid-column .thumb-inner .image:hover .detail {
+          transform: scale(1); }
+        .packages .grid-column .thumb-inner .image img {
+          height: 100%; }
+  .packages .grid .thumb {
+    position: relative; }
+    .packages .grid .thumb:hover .overlay {
+      transform: scale(1); }
+    .packages .grid .thumb:hover .hotel-detail {
+      transform: scale(1); }
+  .packages .grid .image {
+    height: 100%;
+    background-color: red;
+    position: relative; }
+    .packages .grid .image img {
+      height: 100%; }
+  .packages .grid .overlay {
+    background-color: rgba(0, 209, 178, 0.41);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: all .2s; }
+  .packages .grid .hotel-detail {
+    position: absolute;
+    top: 40%;
+    border: 2px solid white;
+    z-index: 3;
+    width: 300px;
+    padding: 10px;
+    transform: scale(0);
+    color: white; }
+    .packages .grid .hotel-detail h3 {
+      font-size: 24px;
+      margin-bottom: 10px; }
+    .packages .grid .hotel-detail h4 {
+      color: #ff3860;
+      margin-bottom: 10px; }
+    .packages .grid .hotel-detail .button {
+      border-radius: 0;
+      margin-top: 10px; }
+
+.gallery {
+  padding: 100px 0; }
+  .gallery-title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333; }
+  .gallery-subtitle {
+    text-align: center;
+    font-size: 22px;
+    color: #7a7a7a;
+    margin-bottom: 50px; }
   .gallery .card .title {
     font-weight: 400; }
   .gallery .card .card-image .image {

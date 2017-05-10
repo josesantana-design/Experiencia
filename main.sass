@@ -111,6 +111,7 @@
 	padding: 0.5rem 0.75rem
 
 .nav
+
 	.nav-left
 		flex-basis: 80%
 	.nav-logo
@@ -128,6 +129,8 @@
 			height: 100%
 		img
 			max-height: 100%
+	 .nav-item
+		 font-weight: 500
 
 	.nav-right
 		flex-basis: 20%
@@ -253,18 +256,186 @@
 		cursor: pointer
 
 
-.gallery
-	padding: 50px
-	.gallery-title
-		text-align: center
-		font-size: 22px
-		color: $primary
-	.gallery-subtitle
+.work
+	padding: 100px 0
+	&-title
 		font-size: 36px
 		font-weight: 600
 		text-align: center
-		margin-bottom: 50px
 		text-transform: uppercase
+		color: #333
+	&-subtitle
+			text-align: center
+			font-size: 22px
+			color: $grey
+			margin-bottom: 50px
+
+	.item
+		text-align: center
+		.icon
+			color: white
+			padding: 40px
+			border-radius: 50%
+			background-color: $danger
+			margin-bottom: 20px
+			position: relative
+			i
+				font-size: 28px
+				transition: all 1s
+				&:hover
+					color: white
+					transform: rotate3d(0,1,0,180deg)
+		h3
+			font-size: 22px
+			font-weight: 600
+			margin-bottom: 10px
+
+.packages
+	.grid
+		display: flex
+		height: 600px
+		padding: 0px
+		&-column
+			width: 50%
+			height: 100%
+			display: flex
+			flex-wrap: wrap
+			&-inner
+				width: 50%
+				height: 50%
+
+			.description
+				text-align: center
+				padding: 20px
+				height: 100%
+				position: relative
+				border-top: 1px solid #d4d4d4
+				border-bottom: 1px solid #d4d4d4
+				h3
+					color: #333
+					font-size: 24px
+					margin-bottom: 10px
+				h4
+					color: #ff3860
+					margin-bottom: 10px
+
+				.button
+					border-radius: 0
+					margin-top: 10px
+
+			.tooltip-right
+				&::after
+			    border-bottom: 15px solid transparent
+			    border-left: 15px solid #fff
+			    border-top: 15px solid transparent
+			    content: ""
+			    height: 0
+			    position: absolute
+			    right: -13px
+			    top: 43%
+			    width: 0
+			    z-index: 2
+			.tooltip-left
+				&::after
+				    border-bottom: 15px solid transparent
+				    border-left: 15px solid #fff
+				    border-top: 15px solid transparent
+				    content: ""
+				    height: 0
+				    position: absolute
+				    left: -13px
+				    top: 43%
+				    width: 0
+				    z-index: 2
+    				transform: rotate(180deg)
+
+			.thumb-inner
+				height: 100%
+				.image
+					height: 100%
+					position: relative
+					.detail
+							position: absolute
+							top: 0
+							left: 0
+							width: 100%
+							height: 100%
+							background-color: rgba(0, 209, 178, 0.41)
+							transform: scale(0)
+							transition: all .2s
+							a
+								width: 40px
+								height: 40px
+								position: absolute
+								top: 50%
+								left: 50%
+								color: white
+								i
+									font-size: 24px
+					&:hover
+						.detail
+							transform: scale(1)
+					img
+						height: 100%
+
+		.thumb
+			position: relative
+			&:hover
+				.overlay
+					transform: scale(1)
+				.hotel-detail
+					transform: scale(1)
+		.image
+			height: 100%
+			background-color: red
+			position: relative
+			img
+				height: 100%
+
+		.overlay
+			background-color: rgba(0, 209, 178, 0.41)
+			position: absolute
+			top: 0
+			right: 0
+			z-index: 2
+			width: 100%
+			height: 100%
+			transform: scale(0)
+			transition: all .2s
+
+		.hotel-detail
+			position: absolute
+			top: 40%
+			border: 2px solid white
+			z-index: 3
+			width: 300px
+			padding: 10px
+			transform: scale(0)
+			color: white
+			h3
+				font-size: 24px
+				margin-bottom: 10px
+			h4
+				color: #ff3860
+				margin-bottom: 10px
+
+			.button
+				border-radius: 0
+				margin-top: 10px
+
+.gallery
+	padding: 100px 0
+	&-title
+		font-size: 36px
+		font-weight: 600
+		text-align: center
+		text-transform: uppercase
+		color: #333
+	&-subtitle
+		text-align: center
+		font-size: 22px
+		color: $grey
+		margin-bottom: 50px
 	.card
 		.title
 			font-weight: 400
