@@ -31,9 +31,17 @@ to_picker.on('set', function(event) {
   }
 })
 
-
+// Paises
 $('.pais').click(function(){
   $('.items').toggleClass('open');
 })
 
+// AOS
 AOS.init();
+
+// Scroll Top
+$('.scrolltop').click(function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 800);
+});

@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="css/date.css">
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	
+	<link rel="icon" type="image/png" href="http://bulma.io/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
 </head>
 <body>
 
@@ -85,14 +87,6 @@
 
 			</div>
 
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
-			  <span></span>
-			  <span></span>
-			  <span></span>
-			</span>
-
 		</nav>
 	</header>		<!--End Top -->
 
@@ -100,8 +94,8 @@
 	<section class="banner">
 	    <div class="container">
 
-	      <h1 class="title"><span>Consectetur</span> adipisicing elit.</h1>
-	      <h2 class="subtitle">Optio dolor natus dignissimos, suscipit hic.</h2>
+	      <h1 class="title" data-aos="fade-up"><span>Consectetur</span> adipisicing elit.</h1>
+	      <h2 class="subtitle" data-aos="fade-up" data-aos-duration="1000">Optio dolor natus dignissimos, suscipit hic.</h2>
 
 	      <div class="travel" data-aos="fade-zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
 	      	<div class="tabs is-toggle">
@@ -186,163 +180,164 @@
 	    </div>
 	</section> <!--End Banner -->
 
-<!--Como Trabajamos -->
-<section class="work">
-	<div class="container">
-		<h1 class="work-title">Nuestro Trabajo</h1>
-		<h2 class="work-subtitle">Lorem ipsum dolor sit amet.</h2>
-		<div class="columns">
+	<!--Como Trabajamos -->
+	<section class="work">
+		<div class="container">
+			<h1 class="work-title"><span>Nuestro</span> Trabajo</h1>
+			<h2 class="work-subtitle">Lorem ipsum dolor sit amet.</h2>
+			<div class="columns">
 
-			<div class="column is-4" data-aos="zoom-in">
-				<div class="item">
-					<div class="icon">
-						<i class="fa fa-search"></i>
+				<div class="column is-4" data-aos="zoom-in">
+					<div class="item">
+						<div class="icon">
+							<i class="fa fa-search"></i>
+						</div>
+						<h3>Buscar</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 					</div>
-					<h3>Buscar</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 				</div>
-			</div>
 
-			<div class="column is-4" data-aos="zoom-in">
-				<div class="item">
-					<div class="icon">
-						<i class="fa fa-heart"></i>
+				<div class="column is-4" data-aos="zoom-in">
+					<div class="item">
+						<div class="icon">
+							<i class="fa fa-heart"></i>
+						</div>
+						<h3>Seleccionar</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 					</div>
-					<h3>Seleccionar</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 				</div>
-			</div>
 
-			<div class="column is-4" data-aos="zoom-in">
-				<div class="item">
-					<div class="icon">
-						<i class="fa fa-cart-plus"></i>
+				<div class="column is-4" data-aos="zoom-in">
+					<div class="item">
+						<div class="icon">
+							<i class="fa fa-cart-plus"></i>
+						</div>
+						<h3>Comprar</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 					</div>
-					<h3>Comprar</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 				</div>
-			</div>
 
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<!--Paquetes -->
-<section class="packages">
-		<div class="grid">
-			<div class="grid-column"  data-aos="fade-left">
+	<!--Paquetes -->
+	<section class="packages">
+			<div class="grid">
+				<div class="grid-column"  data-aos="fade-left">
 
-				<div class="grid-column-inner">
-					<div class="description tooltip-right">
-						<h3>Hotel Margarita</h3>
-						<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
-						<a href="#" class="button is-warning">Comprar</a>
+					<div class="grid-column-inner">
+						<div class="description tooltip-right">
+							<h3>Hotel Margarita</h3>
+							<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
+							<a href="#" class="button is-warning">Comprar</a>
+						</div>
 					</div>
-				</div>
 
-				<div class="grid-column-inner">
-					<div class="thumb-inner">
+					<div class="grid-column-inner">
+						<div class="thumb-inner">
+							<div class="image">
+									<img src="img/hotel_1.jpg">
+									<div class="detail">
+										<a href=""><i class="fa fa-search"></i></a>
+									</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid-column-inner">
+						<div class="thumb-inner">
+							<div class="image">
+									<img src="img/hotel_2.jpg">
+									<div class="detail">
+										<a href=""><i class="fa fa-search"></i></a>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-column-inner">
+						<div class="description tooltip-left">
+							<h3>Hotel Caracas</h3>
+							<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
+							<a href="#" class="button is-warning">Comprar</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="grid-column" data-aos="fade-right">
+					<div class="thumb">
 						<div class="image">
-								<img src="img/hotel_1.jpg">
-								<div class="detail">
-									<a href=""><i class="fa fa-search"></i></a>
-								</div>
+								<img src="img/hotel_3.jpg">
+						</div>
+
+						<span class="overlay"></span>
+
+						<div class="hotel-detail">
+							<h3>Hotel Curacao</h3>
+							<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
+							<a href="#" class="button is-warning">Comprar</a>
 						</div>
 					</div>
 				</div>
+			</div>
+	</section>
 
-				<div class="grid-column-inner">
-					<div class="thumb-inner">
-						<div class="image">
-								<img src="img/hotel_2.jpg">
-								<div class="detail">
-									<a href=""><i class="fa fa-search"></i></a>
-								</div>
+	<section class="ofertas">
+		<div class="container">
+			<h1 class="ofertas-title"><span>Mejores</span> Ofertas</h1>
+			<h2 class="ofertas-subtitle">Lorem ipsum dolor sit amet.</h2>
+			<div class="columns">
+				<div class="column is-3">
+					<div class="ofertas-image">
+						<img src="img/ofertas_1.jpg">
+						<div class="ofertas-description">
+							<h3>Caracas</h3>
+							<p>$300.00</p>
 						</div>
 					</div>
 				</div>
-				<div class="grid-column-inner">
-					<div class="description tooltip-left">
-						<h3>Hotel Caracas</h3>
-						<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
-						<a href="#" class="button is-warning">Comprar</a>
+				<div class="column is-3">
+					<div class="ofertas-image">
+						<img src="img/ofertas_3.jpg">
+						<div class="ofertas-description">
+							<h3>Brasil</h3>
+							<p>$150.00</p>
+						</div>
 					</div>
 				</div>
-
-			</div>
-			<div class="grid-column" data-aos="fade-right">
-				<div class="thumb">
-					<div class="image">
-							<img src="img/hotel_3.jpg">
+				<div class="column is-3">
+					<div class="ofertas-image">
+						<img src="img/ofertas_1.jpg">
+						<span class="ofertas-sale">Economica</span>
+						<div class="ofertas-description">
+							<h3>Madrid</h3>
+							<p>$50.00</p>
+						</div>
 					</div>
-
-					<span class="overlay"></span>
-
-					<div class="hotel-detail">
-						<h3>Hotel Curacao</h3>
-						<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
-						<a href="#" class="button is-warning">Comprar</a>
+				</div>
+				<div class="column is-3">
+					<div class="ofertas-image">
+						<img src="img/ofertas_2.jpg">
+						<div class="ofertas-description">
+							<h3>Panama</h3>
+							<p>$100.00</p>
+						</div>
 					</div>
 				</div>
 			</div>
+
+					<a href="#" class="button is-warning">Ver mas</a>
 		</div>
-</section>
-
-<section class="ofertas">
-	<div class="container">
-		<h1 class="ofertas-title">Mejores Ofertas</h1>
-		<h2 class="ofertas-subtitle">Lorem ipsum dolor sit amet.</h2>
-		<div class="columns">
-			<div class="column is-3">
-				<div class="ofertas-image">
-					<img src="img/ofertas_1.jpg">
-					<div class="ofertas-description">
-						<h3>Caracas</h3>
-						<p>$300.00</p>
-					</div>
-				</div>
-			</div>
-			<div class="column is-3">
-				<div class="ofertas-image">
-					<img src="img/ofertas_3.jpg">
-					<div class="ofertas-description">
-						<h3>Brasil</h3>
-						<p>$150.00</p>
-					</div>
-				</div>
-			</div>
-			<div class="column is-3">
-				<div class="ofertas-image">
-					<img src="img/ofertas_1.jpg">
-					<span class="ofertas-sale">Economica</span>
-					<div class="ofertas-description">
-						<h3>Madrid</h3>
-						<p>$50.00</p>
-					</div>
-				</div>
-			</div>
-			<div class="column is-3">
-				<div class="ofertas-image">
-					<img src="img/ofertas_2.jpg">
-					<div class="ofertas-description">
-						<h3>Panama</h3>
-						<p>$100.00</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-				<a href="#" class="button is-warning">Ver mas</a>
-	</div>
-</section>
+	</section>
 
 	<!--Gallery -->
 	<section class="gallery">
 		<div class="container">
-			<h1 class="gallery-title">Post Recientes</h3>
+			<h1 class="gallery-title"><span>Ultimos</span>
+			post</h3>
 			<h2 class="gallery-subtitle">Lorem ipsum dolor sit amet.</h3>
 			<div class="columns">
 			  <div class="column is-4" data-aos="fade-up" data-aos-duration="500">
@@ -469,16 +464,72 @@
 		</div>
 	</section>
 
+	<footer class="footer">
+		<div class="container">
+			<div class="columns">
+				
+				<div class="footer_contacto">
+					<div class="footer_contacto_logo">
+						<img src="img/logo.png">
+					</div>
+					<ul class="footer_contacto_info">
+						<li><i class="fa fa-map-marker"></i>Valencia ctetueradipiscing elit, sed diam nonu my</li>
+						<li><i class="fa fa-phone"></i>+514 0241548548</li>
+						<li><i class="fa fa-envelope"></i>plusultra@plusultra.com</li>
+					</ul>
+
+					<div class="footer_contacto_redes">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</div>
+				</div>
+
+				<div class="footer_menu">
+					<h4>Mapa del Sitio</h4>
+					<li><a href="#"><i class="fa fa-angle-right"></i>Vuelos</a></li>
+					<li><a href="#"><i class="fa fa-angle-right"></i>Hoteles</a></li>
+					<li><a href="#"><i class="fa fa-angle-right"></i>Carros</a></li>
+					<li><a href="#"><i class="fa fa-angle-right"></i>Paquetes</a></li>
+					<li><a href="#"><i class="fa fa-angle-right"></i>Ofertas</a></li>
+					<li><a href="#"><i class="fa fa-angle-right"></i>Blog</a></li>
+					<li><a href="#"><i class="fa fa-angle-right"></i>Contactanos</a></li>
+				</div>
+
+				<div class="footer_instagram">
+					<h4>Instagram</h4>
+
+					<ul class="footer_instagram_gallery">					
+						<li><a href="#"><img src="img/hotel_1.jpg"></a></li>
+						<li><a href="#"><img src="img/thumb_2.jpg"></a></li>
+						<li><a href="#"><img src="img/thumb_3.jpg"></a></li>
+						<li><a href="#"><img src="img/hotel_1.jpg"></a></li>
+						<li><a href="#"><img src="img/thumb_2.jpg"></a></li>
+						<li><a href="#"><img src="img/thumb_3.jpg"></a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="footer_copy">
+				<p>© Copyright 2017 Plus Ultra. Todos los derechos reservados</p>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- ScrollTop -->
+	<div class="scrolltop">
+		<i class="fa fa-angle-up"></i>
+	</div>
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.date.js"></script>
-
-<script type="text/javascript" src="js/owl.carousel.min.js">
-
-</script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
