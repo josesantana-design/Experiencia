@@ -7,9 +7,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/date.css">
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/android-icon-36x36.png">
 </head>
 <body>
 
@@ -39,7 +40,7 @@
 
 		<nav class="nav has-shadow">
 			<div class="nav-left">
-				<a class="nav-logo">
+				<a class="nav-logo" href="index.html">
 				  <img class="logo" src="img/logo.png">
 				</a>
 
@@ -86,10 +87,11 @@
 	</header>		<!--End Top -->
 
 	<!-- Banner -->
-	<section class="banner" style="background-image: url(img/banner_3.jpeg);">
+	<section class="banner" style="background-image: url(img/ofertas.jpg);">
 	    <div class="container">
 
 	    	<h1 class="title" data-aos="fade-up"><span>Vive</span> la Experiencia</h1>
+			<h2 class="subtitle" data-aos="fade-up" data-aos-duration="1000">Nuestras mejores ofertas</h2>
 
 		    <div class="travel" data-aos="fade-zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
 
@@ -268,286 +270,219 @@
 	    </div>
 	</section> <!--End Banner -->
 
-	<!--Como Trabajamos -->
-	<section class="work">
+	<!-- Ofertas -->
+	<section class="ofertas-details">
 		<div class="container">
-			<h1 class="work-title"><span>Nuestro</span> Trabajo</h1>
-			<h2 class="work-subtitle">Lorem ipsum dolor sit amet.</h2>
+			<h1 class="hotel-details_title"><span>Nuestras</span> Ofertas</h1>
+			<h2 class="hotel-details_subtitle">Lorem ipsum dolor sit amet.</h2>
+			
 			<div class="columns">
-
-				<div class="column is-4" data-aos="zoom-in">
-					<div class="item">
-						<div class="icon">
-							<i class="fa fa-search"></i>
+				<div class="column is-3">
+					<div class="filter">
+						<div class="filter-head">
+							<h3>Filtrar tu Busqueda</h3>
+							<i class="fa fa-filter"></i>
 						</div>
-						<h3>Buscar</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					</div>
-				</div>
-
-				<div class="column is-4" data-aos="zoom-in">
-					<div class="item">
-						<div class="icon">
-							<i class="fa fa-heart"></i>
-						</div>
-						<h3>Seleccionar</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					</div>
-				</div>
-
-				<div class="column is-4" data-aos="zoom-in">
-					<div class="item">
-						<div class="icon">
-							<i class="fa fa-cart-plus"></i>
-						</div>
-						<h3>Comprar</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<!--Paquetes -->
-	<section class="packages">
-			<div class="grid">
-				<div class="grid-column"  data-aos="fade-left">
-
-					<div class="grid-column-inner">
-						<div class="description tooltip-right">
-							<h3>Hotel Margarita</h3>
-							<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
-							<a href="#" class="button is-warning">Comprar</a>
-						</div>
-					</div>
-
-					<div class="grid-column-inner">
-						<div class="thumb-inner">
-							<div class="image">
-									<img src="img/hotel_1.jpg">
-									<div class="detail">
-										<a href=""><i class="fa fa-search"></i></a>
+						<div class="filter-area">
+							<div class="filter-area-first">
+								<h3><i class="fa fa-cart-plus"></i>Destacadas</h3>
+								<div class="filter-area-first-check">
+									<div class="group">	
+										<input type="checkbox">
+										<label for="">Lorem 1</label>
 									</div>
+										<input type="checkbox">
+										<label for="">Lorem 2</label>
+									<div class="group">	
+									</div>
+									<div class="group">	
+										<input type="checkbox">
+										<label for="">Lorem 3</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter-area">
+							<div class="filter-area-first">
+								<h3><i class="fa fa-eye"></i>Mas Visitadas</h3>
+								<div class="filter-area-first-check">
+									<div class="group">	
+										<input type="checkbox">
+										<label for="">Lorem 1</label>
+									</div>
+										<input type="checkbox">
+										<label for="">Lorem 2</label>
+									<div class="group">	
+									</div>
+									<div class="group">	
+										<input type="checkbox">
+										<label for="">Lorem 3</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="column is-9 flex">
+
+					<div class="column is-4" data-aos="zoom-in">
+						<div class="hotel-details_item">
+							<div class="hotel-details_item_image">
+								<img src="img/car_2.jpg">
+								<h3 class="hotel-details_item_pais">Camioneta</h3>
+							</div>
+							
+							<div class="hotel-details_item_description">
+								<h4 class="hotel-details_item_description_ciudad">Valencia</h4>
+								<div class="hotel-details_item_description_ranking">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<h5 class="hotel-details_item_description_from">Empezando desde</h5>
+								<h6 class="hotel-details_item_description_price">196$</h6>
+								<a href="#" class="hotel-details_item_description_button">Ver detalles</a>
+							</div>
+						</div>
+					</div>						
+
+					<div class="column is-4" data-aos="zoom-in">
+						<div class="hotel-details_item">
+							<div class="hotel-details_item_image">
+								<img src="img/car_2.jpg">
+								<h3 class="hotel-details_item_pais">Camioneta</h3>
+							</div>
+							
+							<div class="hotel-details_item_description">
+								<h4 class="hotel-details_item_description_ciudad">Valencia</h4>
+								<div class="hotel-details_item_description_ranking">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<h5 class="hotel-details_item_description_from">Empezando desde</h5>
+								<h6 class="hotel-details_item_description_price">196$</h6>
+								<a href="#" class="hotel-details_item_description_button">Ver detalles</a>
+							</div>
+						</div>
+					</div>					
+
+					<div class="column is-4" data-aos="zoom-in">
+						<div class="hotel-details_item">
+							<div class="hotel-details_item_image">
+								<img src="img/car_2.jpg">
+								<h3 class="hotel-details_item_pais">Camioneta</h3>
+							</div>
+							
+							<div class="hotel-details_item_description">
+								<h4 class="hotel-details_item_description_ciudad">Valencia</h4>
+								<div class="hotel-details_item_description_ranking">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<h5 class="hotel-details_item_description_from">Empezando desde</h5>
+								<h6 class="hotel-details_item_description_price">196$</h6>
+								<a href="#" class="hotel-details_item_description_button">Ver detalles</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="grid-column-inner">
-						<div class="thumb-inner">
-							<div class="image">
-									<img src="img/hotel_2.jpg">
-									<div class="detail">
-										<a href=""><i class="fa fa-search"></i></a>
-									</div>
+					<div class="column is-4" data-aos="zoom-in">
+						<div class="hotel-details_item">
+							<div class="hotel-details_item_image">
+								<img src="img/car_2.jpg">
+								<h3 class="hotel-details_item_pais">Camioneta</h3>
+							</div>
+							
+							<div class="hotel-details_item_description">
+								<h4 class="hotel-details_item_description_ciudad">Valencia</h4>
+								<div class="hotel-details_item_description_ranking">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<h5 class="hotel-details_item_description_from">Empezando desde</h5>
+								<h6 class="hotel-details_item_description_price">196$</h6>
+								<a href="#" class="hotel-details_item_description_button">Ver detalles</a>
 							</div>
 						</div>
 					</div>
-					<div class="grid-column-inner">
-						<div class="description tooltip-left">
-							<h3>Hotel Caracas</h3>
-							<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
-							<a href="#" class="button is-warning">Comprar</a>
+					
+					<div class="column is-4" data-aos="zoom-in">
+						<div class="hotel-details_item">
+							<div class="hotel-details_item_image">
+								<img src="img/car_2.jpg">
+								<h3 class="hotel-details_item_pais">Camioneta</h3>
+							</div>
+							
+							<div class="hotel-details_item_description">
+								<h4 class="hotel-details_item_description_ciudad">Valencia</h4>
+								<div class="hotel-details_item_description_ranking">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<h5 class="hotel-details_item_description_from">Empezando desde</h5>
+								<h6 class="hotel-details_item_description_price">196$</h6>
+								<a href="#" class="hotel-details_item_description_button">Ver detalles</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="column is-4" data-aos="zoom-in">
+						<div class="hotel-details_item">
+							<div class="hotel-details_item_image">
+								<img src="img/car_2.jpg">
+								<h3 class="hotel-details_item_pais">Camioneta</h3>
+							</div>
+							
+							<div class="hotel-details_item_description">
+								<h4 class="hotel-details_item_description_ciudad">Valencia</h4>
+								<div class="hotel-details_item_description_ranking">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<h5 class="hotel-details_item_description_from">Empezando desde</h5>
+								<h6 class="hotel-details_item_description_price">196$</h6>
+								<a href="#" class="hotel-details_item_description_button">Ver detalles</a>
+							</div>
 						</div>
 					</div>
 
-				</div>
-				<div class="grid-column" data-aos="fade-right">
-					<div class="thumb">
-						<div class="image">
-								<img src="img/hotel_3.jpg">
-						</div>
-
-						<span class="overlay"></span>
-
-						<div class="hotel-detail">
-							<h3>Hotel Curacao</h3>
-							<h4><i class="fa fa-map-marker"></i> Venezuela</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, enim!</p>
-							<a href="#" class="button is-warning">Comprar</a>
-						</div>
-					</div>
 				</div>
 			</div>
-	</section>
-
-	<section class="ofertas">
-		<div class="container">
-			<h1 class="ofertas-title"><span>Mejores</span> Ofertas</h1>
-			<h2 class="ofertas-subtitle">Lorem ipsum dolor sit amet.</h2>
-			<div class="columns">
-				<div class="column is-3">
-					<div class="ofertas-image">
-						<img src="img/ofertas_1.jpg">
-						<div class="ofertas-description">
-							<h3>Caracas</h3>
-							<p>$300.00</p>
-						</div>
-					</div>
-				</div>
-				<div class="column is-3">
-					<div class="ofertas-image">
-						<img src="img/ofertas_3.jpg">
-						<div class="ofertas-description">
-							<h3>Brasil</h3>
-							<p>$150.00</p>
-						</div>
-					</div>
-				</div>
-				<div class="column is-3">
-					<div class="ofertas-image">
-						<img src="img/ofertas_1.jpg">
-						<span class="ofertas-sale">Economica</span>
-						<div class="ofertas-description">
-							<h3>Madrid</h3>
-							<p>$50.00</p>
-						</div>
-					</div>
-				</div>
-				<div class="column is-3">
-					<div class="ofertas-image">
-						<img src="img/ofertas_2.jpg">
-						<div class="ofertas-description">
-							<h3>Panama</h3>
-							<p>$100.00</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-					<a href="#" class="button is-warning">Ver mas</a>
 		</div>
 	</section>
-
-	<!--Gallery -->
-	<section class="gallery">
+	
+	<!-- Newsletter -->
+	<section class="newsletter">
 		<div class="container">
-			<h1 class="gallery-title"><span>Ultimos</span>
-			post</h3>
-			<h2 class="gallery-subtitle">Lorem ipsum dolor sit amet.</h3>
 			<div class="columns">
-			  <div class="column is-4" data-aos="fade-up" data-aos-duration="500">
-					<div class="card">
-					  <div class="card-image">
-					    <figure class="image">
-					      <img src="img/thumb.jpg" alt="Image">
-								<h2 class="sale">Destacado</h2>
-								<span class="group-icon">
-									<i class="fa fa-sun-o"></i>
-									<i class="fa fa-umbrella"></i>
-								</span>
-					    </figure>
-					  </div>
-					  <div class="card-content">
-					    <div class="media">
-					      <div class="media-content">
-					        <p class="title">Venezuela</p>
-					        <p class="subtitle">@plusultra</p>
-					      </div>
-					    </div>
+				<div class="column is-6">
+					<form action="" class="newsletter_form">
+						<input class="newsletter_form_input" type="text" placeholder="Ingrese tu Email">
+						<button class="newsletter_form_button"><i class="fa fa-paper-plane"></i>Suscribirse</button>
+					</form>
+				</div>
 
-					    <div class="content">
-					      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					      Phasellus nec iaculis mauris. <a>@plusultra</a>.
-					      <a>#playa</a> <a>#venezuela</a>
-					      <br>
-					      <small>11:09 PM - 1 Jan 2016</small>
-					    </div>
-
-					  </div>
-
-						<div class="read-more">
-								<span class="comment">
-	 							 <i class="fa fa-comment"></i>
-								 5 Comentarios
-							 </span>
-							<a href="#">Leer mas</a>
-						</div>
-
+				<div class="column is-6">
+					<div class="newsletter_redes">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-google"></i></a>
 					</div>
-			  </div>
-
-				<div class="column is-4" data-aos="fade-up" data-aos-duration="1000">
-			 	 <div class="card">
-			 		 <div class="card-image">
-			 			 <figure class="image">
-			 				 <img src="img/thumb_2.jpg" alt="Image">
-			 				 <span class="group-icon">
-			 					 <i class="fa fa-sun-o"></i>
-			 					 <i class="fa fa-umbrella"></i>
-			 				 </span>
-			 			 </figure>
-			 		 </div>
-			 		 <div class="card-content">
-			 			 <div class="media">
-			 				 <div class="media-content">
-			 					 <p class="title">Venezuela</p>
-			 					 <p class="subtitle">@plusultra</p>
-			 				 </div>
-			 			 </div>
-
-			 			 <div class="content">
-			 				 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			 				 Phasellus nec iaculis mauris. <a>@plusultra</a>.
-			 				 <a>#playa</a> <a>#venezuela</a>
-			 				 <br>
-			 				 <small>11:09 PM - 1 Jan 2016</small>
-			 			 </div>
-
-			 		 </div>
-
-			 		 <div class="read-more">
-						 <span class="comment">
-							<i class="fa fa-comment"></i>
-							100 Comentarios
-						</span>
-			 			 <a href="#">Leer mas</a>
-			 		 </div>
-
-			 	 </div>
-			  </div>
-
-				<div class="column is-4" data-aos="fade-up" data-aos-duration="1500">
-				 <div class="card">
-					 <div class="card-image">
-						 <figure class="image">
-							 <img src="img/thumb_3.jpg" alt="Image">
-							 <span class="group-icon">
-								 <i class="fa fa-sun-o"></i>
-								 <i class="fa fa-umbrella"></i>
-							 </span>
-						 </figure>
-					 </div>
-					 <div class="card-content">
-						 <div class="media">
-							 <div class="media-content">
-								 <p class="title">China</p>
-								 <p class="subtitle">@plusultra</p>
-							 </div>
-						 </div>
-
-						 <div class="content">
-							 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							 Phasellus nec iaculis mauris. <a>@plusultra</a>.
-							 <a>#lago</a> <a>#china</a>
-							 <br>
-							 <small>12:09 AM - 1 Jan 2016</small>
-						 </div>
-
-					 </div>
-
-					 <div class="read-more">
-						 <span class="comment">
-							<i class="fa fa-comment"></i>
-							20 Comentarios
-						</span>
-						 <a href="#">Leer mas</a>
-					 </div>
-
-				 </div>
-			 </div>
+				</div>
 			</div>
 		</div>
 	</section>

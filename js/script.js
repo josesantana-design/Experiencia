@@ -45,3 +45,26 @@ $('.scrolltop').click(function() {
     scrollTop: 0
   }, 800);
 });
+
+$('.owl-carousel').owlCarousel({
+    items:4,
+    loop:true,
+    nav: true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+})
+
+var linksParent = $('.tabs');
+var links = linksParent.find('a');
+var items = $('.form');
+
+items.eq(0).addClass('active');
+
+linksParent.on('click', 'a', function(){
+  var t = $(this);
+  var i = t.index();
+  t.addClass('active').siblings().removeClass('active');
+  items.eq(i).addClass('active').siblings().removeClass('active');
+})

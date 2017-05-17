@@ -4347,7 +4347,7 @@ label.panel-block {
     color: white;
     width: 70px;
     justify-content: space-between;
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 3px;
     margin-left: 10px; }
   .top-right .redes {
@@ -4434,7 +4434,6 @@ label.panel-block {
   display: block !important; }
 
 .banner {
-  background-image: url(/img/banner_3.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -4467,24 +4466,28 @@ label.panel-block {
     background-color: rgba(0, 0, 0, 0.42);
     width: 100%;
     padding: 2em;
-    margin-top: 50px; }
-    .banner .travel .tabs li {
-      margin-right: 5px; }
-      .banner .travel .tabs li:first-child a {
-        border-radius: 0;
-        border: 2px solid #00d1b2; }
-      .banner .travel .tabs li:last-child a {
-        border-radius: 0; }
-      .banner .travel .tabs li a {
+    margin-top: 50px;
+    height: 100%; }
+    .banner .travel .tabs {
+      justify-content: flex-start; }
+      .banner .travel .tabs a {
+        margin-right: 5px;
         color: white;
         border: 2px solid white; }
-        .banner .travel .tabs li a:hover {
+        .banner .travel .tabs a.active {
+          background-color: #00d1b2;
+          border: 2px solid #00d1b2; }
+        .banner .travel .tabs a:hover {
           background-color: #00d1b2;
           border: 2px solid #00d1b2; }
     .banner .travel .form {
-      display: flex;
+      display: none;
       justify-content: space-between;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      position: absolute;
+      width: 100%; }
+      .banner .travel .form.active {
+        display: flex; }
       .banner .travel .form .label {
         color: white;
         font-weight: 300; }
@@ -4511,6 +4514,10 @@ label.panel-block {
   .banner #input_from,
   .banner #input_to {
     cursor: pointer; }
+  .banner .tab_content {
+    position: relative;
+    width: 100%;
+    height: 130px; }
 
 .work {
   padding: 100px 0; }
@@ -4920,3 +4927,220 @@ label.panel-block {
     background-color: #ff3860; }
   .scrolltop i {
     font-size: 24px; }
+
+.hotel-details {
+  padding: 70px 0; }
+  .hotel-details_title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333; }
+    .hotel-details_title span {
+      font-weight: 300; }
+  .hotel-details_subtitle {
+    text-align: center;
+    font-size: 22px;
+    color: #7a7a7a;
+    margin-bottom: 50px; }
+  .hotel-details_item {
+    text-align: center; }
+    .hotel-details_item_image {
+      position: relative;
+      width: 100%;
+      height: 220px; }
+      .hotel-details_item_image img {
+        height: 100%; }
+    .hotel-details_item_pais {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      font-weight: 600;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      padding: 5px;
+      text-transform: uppercase; }
+    .hotel-details_item_description_ciudad {
+      color: #00d1b2;
+      font-weight: 600;
+      margin: 10px 0; }
+    .hotel-details_item_description_ranking i {
+      color: #ffdd57; }
+    .hotel-details_item_description_from {
+      color: #333;
+      font-weight: 500;
+      margin: 10px 0;
+      position: relative; }
+      .hotel-details_item_description_from:after, .hotel-details_item_description_from:before {
+        content: '';
+        width: 40px;
+        height: 1px;
+        background-color: #333;
+        position: absolute;
+        top: 50%; }
+      .hotel-details_item_description_from:before {
+        left: 12px; }
+      .hotel-details_item_description_from:after {
+        right: 12px; }
+    .hotel-details_item_description_price {
+      font-size: 32px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 20px; }
+    .hotel-details_item_description_button {
+      display: block;
+      background-color: #ff3860;
+      color: white;
+      padding: 10px; }
+      .hotel-details_item_description_button:hover {
+        color: white; }
+
+.newsletter {
+  padding: 70px 0;
+  border-top: 1px solid #ececec; }
+  .newsletter_form {
+    display: flex; }
+    .newsletter_form_input {
+      width: 70%;
+      background: #e6e6e6;
+      border-radius: 0;
+      height: 40px;
+      border: none;
+      outline: none;
+      color: #828282;
+      padding: 20px; }
+    .newsletter_form_button {
+      width: 30%;
+      background-color: #ff3860;
+      border: 0;
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+      outline: none;
+      display: flex;
+      justify-content: center;
+      align-center: center;
+      cursor: pointer; }
+      .newsletter_form_button i {
+        margin-right: 10px;
+        font-size: 16px; }
+  .newsletter_redes {
+    display: flex;
+    justify-content: flex-end; }
+    .newsletter_redes a {
+      background-color: #ff3860;
+      width: 40px;
+      height: 40px;
+      color: white;
+      margin: 0 10px;
+      border-radius: 50%;
+      text-align: center;
+      padding-top: 10px; }
+      .newsletter_redes a:hover {
+        background-color: #00d1b2; }
+
+.vuelos-details {
+  padding: 70px 0;
+  background-color: #fafafa; }
+  .vuelos-details .columns {
+    flex-wrap: wrap; }
+  .vuelos-details_title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333; }
+    .vuelos-details_title span {
+      font-weight: 300; }
+  .vuelos-details_subtitle {
+    text-align: center;
+    font-size: 22px;
+    color: #7a7a7a;
+    margin-bottom: 50px; }
+  .vuelos-details_item {
+    width: 33%; }
+    .vuelos-details_item_image {
+      height: 320px;
+      position: relative; }
+      .vuelos-details_item_image:hover .vuelos-details_item_image_description-top {
+        opacity: 1; }
+      .vuelos-details_item_image img {
+        height: 100%; }
+      .vuelos-details_item_image_description {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        justify-content: space-between;
+        font-size: 18px;
+        color: white;
+        padding: 15px; }
+        .vuelos-details_item_image_description i {
+          margin-right: 10px; }
+      .vuelos-details_item_image_description-top {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        margin-top: 110px;
+        color: white;
+        text-align: center;
+        opacity: 0;
+        transition: all 1s; }
+        .vuelos-details_item_image_description-top h4 {
+          font-size: 18px;
+          margin-bottom: 10px; }
+          .vuelos-details_item_image_description-top h4 i {
+            margin-right: 10px; }
+        .vuelos-details_item_image_description-top a {
+          background-color: #ff3860;
+          padding: 10px;
+          display: block;
+          color: white;
+          width: 120px;
+          margin: auto; }
+          .vuelos-details_item_image_description-top a:hover {
+            color: white; }
+
+.ofertas-details {
+  padding: 70px 0; }
+  .ofertas-details .filter {
+    border: 1px solid #e6e6e6;
+    box-shadow: 0px 2px 5px #e6e6e6; }
+    .ofertas-details .filter-head {
+      background-color: #00d1b2;
+      padding: 40px;
+      color: white;
+      text-align: center;
+      position: relative; }
+      .ofertas-details .filter-head i {
+        position: absolute;
+        bottom: -22px;
+        left: 40%;
+        background-color: #00d1b2;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        padding-top: 7px;
+        border: 5px solid white; }
+    .ofertas-details .filter-area {
+      padding: 0 20px 0; }
+      .ofertas-details .filter-area h3 {
+        color: #ff3860;
+        font-weight: 600;
+        padding: 0 0 20px;
+        font-size: 16px;
+        margin-top: 20px; }
+        .ofertas-details .filter-area h3 i {
+          margin-right: 10px; }
+      .ofertas-details .filter-area-first {
+        padding: 20px 0 0; }
+        .ofertas-details .filter-area-first-check .group {
+          padding-bottom: 20px; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.owl-nav {
+  display: none; }
